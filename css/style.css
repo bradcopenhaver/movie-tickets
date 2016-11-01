@@ -4,3 +4,11 @@ select {
 #display {
   display: none;
 }
+
+body {
+  background: url(../img/theater.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /*background-color: #cccccc;*/
+}
