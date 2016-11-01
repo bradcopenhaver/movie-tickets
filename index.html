@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8">
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+      <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/script.js"></script>
+      <title></title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Movies Movies Movies!</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="age">Please enter your age:</label>
+              <input id="age" class="form-control" type="number">
+            </div>
+            <select class="form-control" id="movie">
+              <option>Ben Hur</option>
+              <option>2001: A Space Odyssey</option>
+              <option>Her</option>
+            </select>
+            <select class="form-control" id="time">
+              <option>2:30 pm</option>
+              <option>5:00 pm</option>
+              <option>7:00 pm</option>
+            </select>
+            <button type="submit" class="btn">Purchase Ticket</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2>Your Ticket Is for:</h2>
+        <p id="output"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
