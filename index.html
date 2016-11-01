@@ -19,22 +19,45 @@
           <form>
             <div class="form-group">
               <label for="age">Please enter your age:</label>
-              <input id="age" class="form-control" type="number">
+              <input id="age" class="form-control" type="number" min="1" required="true">
             </div>
-            <select class="form-control" id="movie">
+            <label for="movie">Choose a movie:</label>
+            <select class="form-control" id="movie" required="true">
 
             </select>
-            <select class="form-control" id="time">
-
-            </select>
+            <div id="timeSelect">
+              <label for="time">Choose a showtime:</label>
+              <select class="form-control" id="time">
+                <option class='clearMe'>1430</option>
+                <option class='clearMe'>1600</option>
+                <option class='clearMe'>1800</option>
+              </select>
+            </div>
+            <div id="seat">
+              <label for="seat">Choose a seat row:</label>
+              <select class="form-control" id="seatrow">
+                <!-- <option>1430</option>
+                <option>1600</option>
+                <option>1800</option> -->
+              </select>
+              <label for="seat">Choose a seat number:</label>
+              <select class="form-control" id="seatnumber">
+                <!-- <option>1430</option>
+                <option>1600</option>
+                <option>1800</option> -->
+              </select>
+            </div>
             <button type="submit" class="btn" id="submit">Purchase Ticket</button>
           </form>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="display">
           <h2>Your Ticket Is for:</h2>
-        <p id="output"></p>
+          <h4><span id="outputTitle"></span></h4>
+          <h5>At <span id="outputTime"></span> hours</h5>
+          <h5> For $<span id="output"></span></h5>
         </div>
       </div>
+      <img src="img/seating.jpg" alt="seating chart">
     </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
-#time {
+select {
+  margin: 0px 0px 10px 0px;
+}
+#display {
   display: none;
 }
-/*#submit {
-  display: none;
-}*/
